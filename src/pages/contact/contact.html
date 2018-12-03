@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Lista de Produtos
+    </ion-title>
+  </ion-navbar>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</ion-header>
+
+<ion-content>
+  <table>
+    <tr>
+      <th>Produto</th>
+      <th>Quuantidade</th>
+      <th>Data</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Batata</td>
+      <td class="qnt">10</td>
+      <td>09/09</td>
+      <td>
+        <button ion-button color="secondary" (click)="addshowPrompt()" icon-start>
+          <i class="material-icons" style="font-size:18px;">add_shopping_cart</i>
+        </button>
+        <button ion-button color="danger" (click)="deleteshowPrompt()" icon-start>
+          <i class="fa fa-remove" style="font-size:18px;"></i>
+
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Cenoura</td>
+      <td class="qnt">15</td>
+      <td>09/09</td>
+      <td>
+        <button ion-button color="secondary" (click)="addshowPrompt()" icon-start>
+          <i class="material-icons" style="font-size:18px;">add_shopping_cart</i>
+
+        </button>
+        <button ion-button color="danger" (click)="deleteshowPrompt()" icon-start>
+          <i class="fa fa-remove" style="font-size:18px;"></i>
+
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Mandioca</td>
+      <td class="qnt">10</td>
+      <td>09/09</td>
+      <td>
+        <button ion-button color="secondary" (click)="addshowPrompt()" icon-start>
+          <i class="material-icons" style="font-size:18px;">add_shopping_cart</i>
+
+        </button>
+        <button ion-button color="danger" (click)="deleteshowPrompt()" icon-start>
+          <i class="fa fa-remove" style="font-size:18px;"></i>
+
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Abóbora</td>
+      <td class="qnt">10</td>
+      <td>09/09</td>
+      <td>
+        <button ion-button color="secondary" (click)="addshowPrompt()" icon-start>
+          <i class="material-icons" style="font-size:18px;">add_shopping_cart</i>
+
+        </button>
+        <button ion-button color="danger" (click)="deleteshowPrompt()" icon-start>
+          <i class="fa fa-remove" style="font-size:18px;"></i>
+        </button>
+      </td>
+    </tr>
+
+  </table>
+
+</ion-content>

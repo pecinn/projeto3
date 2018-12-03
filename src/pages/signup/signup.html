@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastrar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="signup()" [formGroup]="form">
+    <ion-list inset>
+
+      <ion-item >
+        <ion-input type="text" placeholder="Email" formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-input type="password" placeholder="Senha" formControlName="password"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding-horizontal>
+      <div>{{erroCadastro}}</div>
+      <button ion-button full type="submit" [disabled]="!form.valid">Cadastar</button>
+    </div>
+  </form>
+</ion-content>
